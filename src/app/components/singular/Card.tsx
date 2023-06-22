@@ -1,5 +1,9 @@
 import React from "react";
 
-export default function Card() {
-  return <div>{children}</div>;
+interface props {
+  children: React.ReactNode;
+}
+
+export default function Card({ children }: props) {
+  return <div className="shadow ">{children}</div>;
 }
